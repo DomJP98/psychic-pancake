@@ -1,0 +1,2434 @@
+
+@font-face{
+  font-family: 'averta'; 
+  src: url(../fonts/averta-regular.f50e5a9.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'averta-semibold'; 
+  src: url(../fonts/averta-semibold.cb71222.woff2) format('woff2');
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'Telegraf'; 
+  src: url(../fonts/Telegraf-Medium.20cbfef.woff2) format('woff2'); 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+  background: white;
+}
+
+
+
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+a{
+  text-decoration: none;
+}
+.container{
+  background-color: black;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Telegraf'; 
+    padding: 10px 30px;
+    transition: 0.3s ease;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+    
+}
+
+header nav h3{
+    display: none;
+}
+
+.container header nav p{
+    color: white;
+    font-size: 1rem;
+
+}
+
+.container nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hamburger span{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    padding: 1px ;
+    position: relative;
+    right: 8px;
+}
+
+.hamburger{
+    width: 20px;
+    height: 20px;
+}
+   .hamburger .bar1{
+        transform: translate(35%, -4px);
+        width: 1rem;
+        height: 1px;
+        
+    }
+
+    .hamburger .bar2{
+        transform: translate(25%, -5px);
+        width: 25px;
+        height: 2px;
+    }
+
+    .hamburger .bar3{
+       transform: translate(95%, -5px); 
+       height: 1px;
+       width: 1rem;
+    }
+        /* Hide checkbox */
+        #menu-toggle {
+            cursor: pointer;
+            display: none;
+        }
+        
+        /* Full-page menu */
+        .menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+            z-index: 1500;
+        }
+        
+        .menu .active{
+          color: rgb(220, 117, 80);
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            margin: 15px 0;
+            padding: 10px 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .menu a:hover {
+            color: rgb(220, 117, 80);
+            border-radius: 5px;
+        }
+        
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
+        /* Animation when menu is open */
+        #menu-toggle:checked ~ .menu {
+            left: 0;
+        }
+
+    #horizontal-line{
+        height: 1px;
+        background-color: rgb(46, 46, 46);
+        border: none;
+        margin: 0.4rem 30px;
+    }
+
+
+    @media screen and (min-width:600px) {
+      main{
+      background-color: #fff;
+    }
+
+    main .section1{
+        padding: 3rem 2rem;
+        background-color: black;
+    }
+    main .section1 h1{
+        color: rgb(220, 117, 80);
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-family: 'Telegraf', sans-serif;
+        font-weight: normal;
+    }
+    main .section1 h1 span{
+        color: #fff;
+    }
+
+    main .section1 .item2{
+        margin-bottom: 1rem;
+    }
+    main .section1 .stroke{
+        background-color: rgb(220, 117, 80);
+        display: inline-block;
+        position: relative;
+        top: 1rem;
+        padding: 0.5px 13px;
+    }
+
+    main .section1 .pine-btn{
+        padding-left: 2.2rem;
+        
+    }
+    main .section1 .pine-btn h3{
+        font-family: 'averta', sans-serif; 
+        color: gray;
+        font-size: 16px;
+        padding: 0 0 2rem 0;
+        line-height: 1.6rem;
+        text-align: left;
+    }
+
+    main .section1 .pine-btn .btn, main .section9 .btn{
+        padding: 1rem 1.5rem;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+    }
+
+
+    main .section1 .pine-btn .btn:hover, main .section9 .btn:hover{
+        background-color: rgb(220, 117, 80);
+        color: white;
+    }
+
+    main .section1 .btn:hover .arrow, main .section9 .btn:hover .arrow{
+      fill: white;
+    }
+    main .section1 .btn .arrow, main .section9 .btn .arrow {
+        fill: black;
+    }
+
+    main .section1 .image-container1{
+        color: #fff;
+    }
+
+    main .section1 .image-container1 div p{
+        font-size: 14px;
+        padding: 2rem 0 0.3rem 1rem;
+    }
+    main .section1 .image-container1 div span span{
+        color: gray;
+        font-size: 13px;
+        display: block;
+        letter-spacing: 1px;
+    }
+
+    main .section1 .image-container1 .item2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-right: 2rem;
+        font-family: 'averta', sans-serif; 
+    }
+
+    main .section1 .image-container1 .video-container{
+    margin-top: 0px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    clip-path: circle(50%);
+    }
+
+    main .section1 .image-container1 .video-container video{
+    margin-top: -200px;
+    height: 900px;
+    width: 900px;
+    margin-left: -23rem;
+    }
+    
+
+    main .section1 .image-container1 .item2 img{
+        position: relative;
+        top: 1rem;
+    }
+    .desktop{
+        display: none;
+    }
+
+    main .black-bg{
+      background-color: black;
+    }
+    main .section2{
+        background: rgb(220, 117, 80);
+        border-top-left-radius: 2000px;
+        border-top-right-radius: 2000px;
+        color: white;
+    }
+
+    main .section2 .item1{
+        padding: 6rem 6rem 0 6rem;
+        font-family: 'Telegraf', sans-serif;
+        
+
+    }
+
+     main .section2 .item1 h1{
+        text-align: center;
+        line-height: 2rem;
+        font-weight: normal;
+  
+    }
+
+    main .section2 .item2{
+        padding: 0 2rem;
+    }
+    main .section2 .item2 section{
+        border: 0.1px solid hsla(0, 0%, 100%, .3);
+        text-align: center;
+        padding: 1rem;
+        border-left: none;
+        border-right: none;
+    }
+    
+    main .section2 .item2 section h1{
+            padding-top: 0.5rem;
+            font-size: 1.8rem;
+            font-family: 'Telegraf', sans-serif;
+            font-weight: normal;
+         }
+     main .section2 .item2 section p{
+        padding: 1rem 0;
+        opacity: 0.8;
+        font-size: 14px;
+        font-family: 'averta', sans-serif; 
+     }
+      main .section2 .item2 section:first-child{
+        padding-top: 3rem;
+        border-top: none;
+    }
+
+     main .section2 .item2 section:last-child{
+        border-bottom: none;
+     }
+
+     main .section2 iframe{
+      height: 250px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    left: 2.5rem;
+     }
+
+     main .section2 section img{
+        padding:2rem 3rem;
+        width: 100%;
+     }
+     main .section2 hr{
+        display: none;
+     }
+     main .section3{
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+     }
+
+     main .section3 p{
+        padding: 4rem 4rem 2rem 4rem;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(140, 145, 155);
+        font-family: 'averta', sans-serif;
+     }
+
+    main .section3 .image-container2 img{
+        min-width: 80px;
+        width: 10%;
+        
+     }
+
+     main .section3 .image-container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    justify-items: center;
+    place-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+     }
+
+     main .section3{
+        border-bottom: 1px solid rgb(162, 167, 176);
+        padding-bottom: 1.5rem;
+     }
+
+     main .section4{
+        padding: 2rem 2.5rem;
+        background: rgb(255, 255, 255);
+        font-family: 'Telegraf', sans-serif;
+     }
+
+      main .section4 .section4-item1 p{
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.8rem;
+      }
+
+      main .section4 .section4-item1 span{
+        color: rgb(220, 117, 80);
+      }
+
+      main .section4 .section4-item1 a button{
+        border: none;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        justify-content: center;
+        background-color: black;
+        cursor: pointer;
+      }
+
+      main .section4 .section4-item1 a button:hover{
+        background: rgb(220, 117, 80);
+        border: none;
+      }
+
+      main .section4 .section4-item2 .discovering{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+      }
+      main .section4 .section4-item2 .discovering img{
+        width: 20%;
+      }
+      main .section4 .section4-item2 .discovering a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+      }
+
+      main .section4 .section4-item2 .discovering a:hover{
+        color: rgb(220, 117, 80);
+      }
+
+       main .section4 .section4-item2 ul a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        line-height: 2.4rem;
+      }
+
+      main .section4 .section4-item2 ul{
+        list-style: none;
+        padding: 0 1.6rem 2rem 0;
+        opacity: 0.7;
+        font-family: 'averta', sans-serif;
+      }
+
+      main .section4 .section4-item2 .item-3 ul li a span{
+        display: inline-block;
+        margin-right: 10px;
+      width: 1px;
+      height: 1px;
+      background-color: rgb(252, 216, 78);
+      padding: 4px 6px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      }
+
+      main .section4 .section4-item2 .transform ul{
+        padding: 1rem 0;
+        opacity: 1;
+        font-weight: 600;
+        font-family: 'averta', sans-serif;
+      }
+      main .section4 .section4-item2 .transform ul li{
+        border: 1px solid rgb(221, 223, 226);
+        padding: 0.8rem 0;
+        border-left: none;
+        border-right: none;
+      }
+
+      main .section4 .section4-item2 .transform ul li a{
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+
+      main .section4 .section4-item2 .transform ul li a:hover{
+        color: rgb(220, 117, 80);
+      }
+
+      main .section4 .section4-item2 .transform ul li:first-child{
+        border-top: 3px solid black;
+      }
+
+      main .section4 .section4-item2 .transform button{
+        margin-left: 80%;
+        border: 1px solid rgb(220, 117, 80);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent;
+        padding-bottom: 5px;
+      }
+      main .section4 .section4-item2 .transform button a{
+        text-decoration: none;
+        font-size: 1rem;
+        color: rgb(220, 117, 80);
+      }
+
+      main .section4 .section4-item2 .transform ul li span .right-arrow{
+        width: 1.3rem;
+      }
+
+      main .section4 .section4-item2 .transform ul li span{
+        padding-left: 8rem;
+      }
+
+      main .section4 .section4-item2 .transform ul li .item2{
+        padding-left: 12rem;
+      }
+
+      main .section4 .section4-item2 .transform ul li .item3{
+        padding-left: 11.5rem;
+      }
+
+      main .section5{
+        background-color: #fff;
+      }
+      main .section5 section{
+        padding: 2rem;
+        line-height: 1.5rem;
+      }
+
+      main .section5 section:first-child{
+        background-color: rgb(210, 234, 195);
+      }
+
+      main .section5 section:nth-of-type(2){
+        color: white;
+        background-color: black;
+      }
+
+      main .section5 section:nth-of-type(3){
+        color: white;
+        background-color: rgb(220, 117, 80);
+      }
+      main .section5 section img{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+      }
+
+      main .section5 section h1{
+        padding: 1rem 0;
+        font-family: 'Telegraf', sans-serif;
+      }
+
+      main .section5 section p{
+        padding: 0 0 3rem 0;
+        opacity: 0.7;
+        font-family: 'averta', sans-serif;
+      }
+
+      main .section5 section:nth-of-type(4){
+        display: none;
+      }
+
+      main .section6{
+        background-color: white;
+        font-family: 'Telegraf', sans-serif;
+      }
+      main .section6 section:nth-of-type(1){
+        background-color: rgb(245, 245, 246);
+        padding: 1rem 2rem 3rem 2rem;
+        text-align: center;
+        line-height: 1.8rem;
+      }
+
+      main .section6 section p{
+        font-family: 'averta', sans-serif;
+      }
+      main .section6 section:nth-of-type(1) button{
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+        font-weight: 600;
+        font-size: 16px;
+        color: rgb(220, 117, 80);
+        border: 1.5px solid rgb(220, 117, 80);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent;
+      }
+      main .section6 section:nth-of-type(2) span{
+        color: rgb(220, 117, 80);
+      }
+
+      main .section6 section:nth-of-type(2){
+        margin: 4rem 0;
+        text-align: center;
+      }
+
+      main .section6 section:nth-of-type(2) h2{
+        padding: 0 6.5rem 2rem 6.5rem;
+        line-height: 1.8rem;
+        font-weight: 500;
+        opacity: 0.7;
+      }
+
+      main .section6 section:nth-of-type(2) h2 em{
+        display: block;
+      }
+
+      main .section6 section:nth-of-type(2) p{
+        padding: 0 5rem 0rem 5rem;
+        line-height: 1.7rem;
+        opacity: 0.8;
+      }
+
+      main .section7{
+        background-color: #fff;
+        font-family: 'Telegraf', sans-serif;
+      }
+
+      main .section7 section{
+        display: flex;
+        row-gap: 3rem;
+        justify-content: space-between;
+        margin: 0 2rem;
+        flex-wrap: wrap;
+      }
+
+      main .section7 section span{
+        justify-content: center;
+        width: 50%;
+        position: relative;
+        cursor: pointer;
+      }
+
+
+      main .section7 section span h5 .dot{
+        display: inline-block;
+        background-color: black;
+        width: 5px;
+        height: 5px;
+        margin: 0 1px;
+        border-radius: 50%;
+      }
+
+
+
+      main .section7 section span:nth-of-type(3){
+        margin-top: 2rem;
+      }
+      main .section7 section span p, main .section7 section span h3, main .section7 section span h5{
+        text-align: center;
+        line-height: 2rem;
+      }
+
+
+      main .section7 section span h3{
+        margin-top: 1.5rem;
+        font-weight: normal;
+      }
+      main .section7 section span h5{
+        padding-top: 1rem;
+        font-size: 16px;
+        font-family: 'averta', sans-serif;
+        font-weight: normal;
+      }
+      main .section7 section span img{
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      main .section7 section span img:hover{
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 1px;
+        border-bottom-right-radius: 1px;
+        transition: 0.45s ease-in-out;
+      }
+
+       main .section7 section span:nth-of-type(1) p{
+        background-color: rgb(209, 233, 194);
+        position: absolute;
+        left: 4.8rem;
+        bottom: 11rem;
+        font-size: 13px;
+        padding: 0 10px;
+       }
+
+       main .section7 section span:nth-of-type(2) p{
+        background-color: rgb(209, 233, 194);
+        position: absolute;
+        left: 2.6rem;
+        bottom: 11rem;
+        font-size: 13px;
+        padding: 0 10px;
+       }
+
+       main .section7 section span:nth-of-type(3) p{
+        background-color: rgb(209, 233, 194);
+        position: absolute;
+        left: 2.6rem;
+        bottom: 13rem;
+        font-size: 13px;
+        padding: 0 10px;
+       }
+
+
+       main .section7 button{
+        text-align: center;
+        margin: 5rem 150px;
+        border: none;
+        font-size: 16px;
+        background-color: black;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        font-family: 'averta-semibold', sans-serif;
+        z-index: 500;
+       }
+
+       main .section7 button:hover{
+        background-color: rgb(220, 117, 80);
+       }
+       button{
+        cursor: pointer;
+       }
+
+       main .section8{
+        font-family: 'Telegraf', sans-serif;
+        position: relative;
+        margin-top: 1rem;
+       }
+
+       main .section8 .scroll-container textPath {
+  transition: start-offset 1s ease-out;
+}
+
+      main .section8 .text-container section .text,main .section8 .text-container section .item1{
+      display: flex;      
+    }
+
+    main .section8 .text-container{
+      background: rgb(255, 235, 162);
+      padding: 0rem 1rem 5rem 1rem;
+      border-top-left-radius: 20rem;
+      border-top-right-radius: 20rem;
+      position: relative;
+      bottom: 8rem; 
+    }
+
+    main .section8 .text-container section{
+      padding-top: 6rem;
+    }
+  
+    main .section8 section h3{
+      font-weight: 550;
+      line-height: 1.6rem;
+      text-align: center;
+      margin:  0 6rem 2rem 6rem;
+      font-size: 1.25rem;
+    }
+  
+    main .section8 section span{
+      color: rgb(220, 117, 80);
+    }
+
+    main .section8 section .text{
+      justify-content: space-between;
+      gap: 8rem;
+      padding: 2rem 0;
+      margin: 0 1rem;
+      align-items: center;
+      border: 1px solid gray;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      line-height: 1.6rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+      main .section8 section .item2{
+      background: #000;
+      height: 2px;
+      width: 1rem;
+    }
+
+      main .section8 section .item3{
+      background: #000;
+      height: 2px;
+      width: 1rem;
+      rotate: 90deg;
+      position: relative;
+      right:16px;
+    }
+
+    main .section9{
+      padding: 0rem 5.1rem;
+      text-align: center;
+      line-height: 1.6rem;
+      font-family: 'Telegraf', sans-serif;
+
+    }
+    main .section9 h2 span{
+      color: rgb(220, 117, 80);
+    }
+
+    main .section9 h2{
+      font-size: 1.8rem;
+      padding-bottom: 2rem;
+      line-height: 2.3rem;
+    }
+
+    main .section9 p{
+      font-family: 'Averta', sans-serif;
+      opacity: 0.7;
+    }
+    main .section9 .btn{
+      margin: 3rem 0 6rem 0;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid;
+      font-weight: 600;
+    }
+
+    main .section-10{
+      background-color: #fff;
+      padding-bottom: 1rem;
+    }
+    main .section10{
+      background-color: rgb(15, 42, 20);
+      position: relative;
+    }
+    
+    main .section10 section:first-child{
+      background: rgb(210, 234, 195);
+      padding: 1rem 0 ;
+    }
+
+    main .section10 section:nth-of-type(1) span h3{
+      font-size: 1.4rem;
+      padding-bottom: 0.8rem;
+      font-family: 'Telegraf', sans-serif;
+      font-weight: normal;
+    }
+
+    main .section10 section:nth-of-type(1) span p{
+      font-size: 1rem;
+      font-family: 'averta', sans-serif;
+      padding-bottom: 1.5rem;
+    }
+    main .section10 section:nth-of-type(1) span{
+      display: block;
+      padding: 1rem 2rem 1rem;
+      line-height: 1.6rem;
+    }
+
+    main .section10 section:nth-of-type(1) span em{
+      display: block;
+    }
+
+    main .section10 section:nth-of-type(2){
+      position: relative;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 1rem;
+      padding-top: 0.2rem;
+      border-radius: 5px;
+      bottom: 2rem;
+    }
+
+    main .section10 section:nth-of-type(2) input::placeholder{
+      opacity: 1;
+      color: #000;
+      font-weight: 500;
+    }
+    main .section10 section:nth-of-type(2) input{
+      padding: 1rem 1.5rem;
+      outline: none;
+      border: none;
+      font-size: 0.96rem;
+      
+    }
+
+    main .section10 section:nth-of-type(2) button{
+      color: white;
+      background-color: black;
+      padding: 1rem;
+      margin: 0.1rem;
+      font-weight: 600;
+      border-radius: 5px;
+      font-size: 1rem;
+      border: none;
+    }
+
+    main .section10 section:nth-of-type(2) button:hover{
+      background: rgb(220, 117, 80);
+    }
+
+    footer{
+      background: white;
+      font-family: 'Telegraf', sans-serif;
+      padding: 2rem;
+    }
+
+    footer a{
+      color: #000;
+    }
+
+    footer a:hover{
+      color: rgb(220, 117, 80);
+      transition: .5s ease-in-out;
+    }
+    footer p{
+      font-family: 'averta', sans-serif;
+    }
+
+    footer .item-1{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer .item-1 section:first-child{
+      width: 100%;
+      line-height: 1.6rem;
+    }
+
+    footer .item-1 section:first-child img{
+      padding-bottom: 1rem;
+    }
+
+    footer .item-1 section:last-child{
+      line-height: 1.6rem;
+      width: 22rem;
+      
+    }
+
+    footer .item-1 section:last-child h3{
+      padding-bottom: 1rem;
+    }
+
+    footer .item-1 section:last-child h3{
+      padding-bottom: 1rem;
+    }
+
+    footer .item-1 section:last-child h4{
+      padding: 3rem 0 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    footer .item-1 section:last-child p{
+      font-size: 1rem;
+
+    }
+
+    footer .item-2{
+      display: flex;
+      gap: 8rem;
+      margin-top: 4.5rem;
+    }
+
+    footer .item-2 div{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    footer .item-2 div a{
+      color: #000;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    footer .item-2 div .active{
+      color: rgb(220, 117, 80);
+    }
+
+    footer .item-2 div a:hover{
+      color: rgb(220, 117, 80);
+      transition: 0.5s ease-in-out;
+    }
+
+      
+    }
+
+    /* mobile view section */
+
+  @media screen and (max-width:500px) {
+
+    main{
+      background-color: #fff;
+    }
+
+    main .section1{
+        padding: 3rem 2rem 5rem;
+        background-color: black;
+    }
+    main .section1 h1{
+        color: rgb(220, 117, 80);
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-family: 'Telegraf', sans-serif;
+        font-weight: normal;
+    }
+    main .section1 h1 span{
+        color: #fff;
+    }
+
+    main .section1 .item2{
+        margin-bottom: 1rem;
+    }
+    main .section1 .stroke{
+        background-color: rgb(220, 117, 80);
+        display: inline-block;
+        position: relative;
+        top: 1rem;
+        padding: 0.5px 13px;
+    }
+
+    main .section1 .pine-btn{
+        padding-left: 2.2rem;
+        
+    }
+    main .section1 .pine-btn h3{
+        font-family: 'averta', sans-serif; 
+        color: gray;
+        font-size: 16px;
+        padding: 0 0 2rem 0;
+        line-height: 1.6rem;
+        text-align: left;
+    }
+
+    main .section1 .pine-btn .btn, main .section9 .btn{
+        padding: 1rem 1.5rem;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+    }
+
+
+    main .section1 .pine-btn .btn:hover, main .section9 .btn:hover{
+        background-color: rgb(220, 117, 80);
+        color: white;
+    }
+
+    main .section1 .btn:hover .arrow, main .section9 .btn:hover .arrow{
+      fill: white;
+    }
+    main .section1 .btn .arrow, main .section9 .btn .arrow {
+        fill: black;
+    }
+
+    main .section1 .image-container1{
+        color: #fff;
+    }
+
+    main .section1 .image-container1 div p{
+        font-size: 14px;
+        padding: 2rem 0 0.3rem 1rem;
+    }
+    main .section1 .image-container1 div span span{
+        color: gray;
+        font-size: 13px;
+        display: block;
+        letter-spacing: 1px;
+    }
+
+    main .section1 .image-container1 .item2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-right: 2rem;
+        font-family: 'averta', sans-serif; 
+    }
+
+    main .section1 .image-container1 .video-container{
+    margin-top: 0px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    clip-path: circle(50%);
+    }
+
+    main .section1 .image-container1 .video-container video{
+    margin-top: -200px;
+    height: 900px;
+    width: 900px;
+    margin-left: -23rem;
+    }
+    
+
+    main .section1 .image-container1 .item2 img{
+        position: relative;
+        top: 1rem;
+    }
+    .desktop{
+        display: none;
+    }
+
+    main .black-bg{
+      background-color: black;
+    }
+    main .section2{
+        background: rgb(220, 117, 80);
+        border-top-left-radius: 2000px;
+        border-top-right-radius: 2000px;
+        color: white;
+    }
+
+    main .section2 .item1{
+        padding: 6rem 2rem 0;
+        font-family: 'Telegraf', sans-serif;
+        
+
+    }
+
+     main .section2 .item1 h1{
+        text-align: center;
+        line-height: 2rem;
+        font-weight: normal;
+  
+    }
+
+    main .section2 .item2{
+        padding: 0 2rem;
+    }
+    main .section2 .item2 section{
+        border: 0.1px solid hsla(0, 0%, 100%, .3);
+        text-align: center;
+        padding: 1rem;
+        border-left: none;
+        border-right: none;
+    }
+    
+    main .section2 .item2 section h1{
+            padding-top: 0.5rem;
+            font-size: 1.8rem;
+            font-family: 'Telegraf', sans-serif;
+            font-weight: normal;
+         }
+     main .section2 .item2 section p{
+        padding: 1rem 0;
+        opacity: 0.8;
+        font-size: 14px;
+        font-family: 'averta', sans-serif; 
+     }
+      main .section2 .item2 section:first-child{
+        padding-top: 3rem;
+        border-top: none;
+    }
+
+     main .section2 .item2 section:last-child{
+        border-bottom: none;
+     }
+
+     main .section2 iframe{
+      height: 210px;
+    width: 330px;
+    position: relative;
+    overflow: hidden;
+    left: 1.4rem;
+    padding-bottom: 2rem;
+     }
+
+     main .section2 hr{
+        display: none;
+     }
+     main .section3{
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+     }
+
+     main .section3 p{
+        padding: 4rem 4rem 2rem 4rem;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(140, 145, 155);
+        font-family: 'averta', sans-serif;
+     }
+
+    main .section3 .image-container2 img{
+        min-width: 80px;
+        width: 10%;
+        
+     }
+
+     main .section3 .image-container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    justify-items: center;
+    place-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+     }
+
+     main .section3{
+        border-bottom: 1px solid rgb(162, 167, 176);
+        padding-bottom: 1.5rem;
+     }
+
+     main .section4{
+        padding: 2rem 2.5rem;
+        background: rgb(255, 255, 255);
+        font-family: 'Telegraf', sans-serif;
+     }
+
+      main .section4 .section4-item1 p{
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.8rem;
+      }
+
+      main .section4 .section4-item1 span{
+        color: rgb(220, 117, 80);
+      }
+
+      main .section4 .section4-item1 a button{
+        border: none;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        justify-content: center;
+        background-color: black;
+        cursor: pointer;
+        margin-bottom: 2.5rem;
+      }
+
+      main .section4 .section4-item1 a button:hover{
+        background: rgb(220, 117, 80);
+        border: none;
+      }
+
+      main .section4 .section4-item2 .discovering{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+      }
+      main .section4 .section4-item2 .discovering img{
+        width: 20%;
+      }
+      main .section4 .section4-item2 .discovering a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+      }
+
+      main .section4 .section4-item2 .discovering a:hover{
+        color: rgb(220, 117, 80);
+      }
+
+       main .section4 .section4-item2 ul a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        line-height: 2.4rem;
+      }
+
+      main .section4 .section4-item2 ul{
+        list-style: none;
+        padding: 0 1.6rem 2rem 0;
+        opacity: 0.7;
+        font-family: 'averta', sans-serif;
+      }
+
+      main .section4 .section4-item2 .item-3 ul li a span{
+        display: inline-block;
+        margin-right: 10px;
+      width: 1px;
+      height: 1px;
+      background-color: rgb(252, 216, 78);
+      padding: 4px 6px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      }
+
+      main .section4 .section4-item2 .transform ul{
+        padding: 1rem 0;
+        opacity: 1;
+        font-weight: 600;
+        font-family: 'averta', sans-serif;
+      }
+      main .section4 .section4-item2 .transform ul li{
+        border: 1px solid rgb(221, 223, 226);
+        padding: 0.8rem 0;
+        border-left: none;
+        border-right: none;
+
+      }
+
+      main .section4 .section4-item2 .transform ul li a{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        opacity: 0.8;
+      }
+
+      
+      main .section4 .section4-item2 .transform ul li a:hover{
+        color: rgb(220, 117, 80);
+      }
+
+      
+
+      main .section4 .section4-item2 .transform button{
+        margin-left: 70%;
+        border: 1px solid rgb(220, 117, 80);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent;
+        padding-bottom: 5px;
+      }
+      main .section4 .section4-item2 .transform button a{
+        text-decoration: none;
+        font-size: 1rem;
+        color: rgb(220, 117, 80);
+      }
+
+      main .section4 .section4-item2 .transform ul li span .right-arrow{
+        width: 1rem;
+      }
+      
+
+      main .section4 .section4-item2 .transform ul:nth-of-type(1) span{
+        position: relative;
+      }
+
+      main .section4 .section4-item2 .transform ul li:first-child{
+        border-top: 3px solid black;
+        display: flex;
+        gap: 3rem;
+        padding-right: 24px;
+      }
+
+      main .section4 .section4-item2 .transform ul li .item2{
+        padding-left: 4rem;
+      }
+
+      main .section4 .section4-item2 .transform ul li .item3{
+        padding-left: 3.5rem;
+      }
+
+      main .section5{
+        background-color: #fff;
+      }
+      main .section5 section{
+        padding: 2rem;
+        line-height: 1.5rem;
+      }
+
+      main .section5 section:first-child{
+        background-color: rgb(210, 234, 195);
+      }
+
+      main .section5 section:nth-of-type(2){
+        color: white;
+        background-color: black;
+      }
+
+      main .section5 section:nth-of-type(3){
+        color: white;
+        background-color: rgb(220, 117, 80);
+      }
+      main .section5 section img{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+      }
+
+      main .section5 section h1{
+        padding: 1rem 0;
+        font-family: 'Telegraf', sans-serif;
+      }
+
+      main .section5 section p{
+        padding: 0 0 3rem 0;
+        opacity: 0.7;
+        font-family: 'averta', sans-serif;
+      }
+
+      main .section5 section:nth-of-type(4){
+        display: none;
+      }
+
+      main .section6{
+        background-color: white;
+        font-family: 'Telegraf', sans-serif;
+      }
+      main .section6 section:nth-of-type(1){
+        background-color: rgb(245, 245, 246);
+        padding: 1rem 2rem 3rem 2rem;
+        text-align: center;
+        line-height: 1.8rem;
+      }
+
+      main .section6 section p{
+        font-family: 'averta', sans-serif;
+      }
+      main .section6 section:nth-of-type(1) button{
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+        font-weight: 600;
+        font-size: 16px;
+        color: rgb(220, 117, 80);
+        border: 1.5px solid rgb(220, 117, 80);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent;
+      }
+      main .section6 section:nth-of-type(2) span{
+        color: rgb(220, 117, 80);
+      }
+
+      main .section6 section:nth-of-type(2){
+        margin: 4rem 0;
+        text-align: center;
+      }
+
+      main .section6 section:nth-of-type(2) h2{
+        padding: 0 4rem 2rem;
+        line-height: 1.8rem;
+        font-weight: 500;
+        opacity: 0.7;
+      }
+
+      main .section6 section:nth-of-type(2) h2 em{
+        display: block;
+      }
+
+      main .section6 section:nth-of-type(2) p{
+        padding: 0 2rem 0rem;
+        line-height: 1.7rem;
+        opacity: 0.8;
+      }
+
+      main .section7{
+        background-color: #fff;
+        font-family: 'Telegraf', sans-serif;
+      }
+
+      main .section7 section{
+        display: flex;
+        row-gap: 3rem;
+        justify-content: space-between;
+        margin: 0 2rem;
+        flex-wrap: wrap;
+      }
+
+      main .section7 section span{
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+      }
+
+
+      main .section7 section span h5 .dot{
+        display: inline-block;
+        background-color: black;
+        width: 5px;
+        height: 5px;
+        margin: 0 1px;
+        border-radius: 50%;
+      }
+
+
+
+      main .section7 section span:nth-of-type(3){
+        margin-top: 2rem;
+      }
+      main .section7 section span p, main .section7 section span h3, main .section7 section span h5{
+        text-align: center;
+        line-height: 2rem;
+      }
+
+
+      main .section7 section span h3{
+        margin-top: 1.5rem;
+        font-weight: normal;
+      }
+      main .section7 section span h5{
+        padding-top: 1rem;
+        font-size: 16px;
+        font-family: 'averta', sans-serif;
+        font-weight: normal;
+      }
+      main .section7 section span img{
+        width: 300px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      main .section7 section span img:hover{
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 1px;
+        border-bottom-right-radius: 1px;
+        transition: 0.45s ease-in-out;
+      }
+
+       main .section7 section span:nth-of-type(1) p{
+        background-color: rgb(209, 233, 194);
+        position: absolute;
+        left: 7.5rem;
+        bottom: 9rem;
+        font-size: 13px;
+        padding: 0 10px;
+       }
+
+       main .section7 section span:nth-of-type(2) p{
+        background-color: rgb(209, 233, 194);
+        position: absolute;
+        left: 5.5rem;
+        bottom: 9rem;
+        font-size: 13px;
+        padding: 0 10px;
+       }
+
+       main .section7 section span:nth-of-type(3) p{
+        background-color: rgb(209, 233, 194);
+        position: absolute;
+        left: 6rem;
+        bottom: 11rem;
+        font-size: 13px;
+        padding: 0 10px;
+       }
+
+
+       main .section7 button{
+        text-align: center;
+        margin: 5rem 100px;
+        border: none;
+        font-size: 16px;
+        background-color: black;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        font-family: 'averta-semibold', sans-serif;
+        z-index: 500;
+       }
+
+       main .section7 button:hover{
+        background-color: rgb(220, 117, 80);
+       }
+       button{
+        cursor: pointer;
+       }
+
+       main .section8{
+        font-family: 'Telegraf', sans-serif;
+        position: relative;
+        margin-top: 1rem;
+       }
+
+       main .section8 .scroll-container textPath {
+  transition: start-offset 1s ease-out;
+}
+
+      main .section8 .text-container section .text,main .section8 .text-container section .item1{
+      display: flex;      
+    }
+
+    main .section8 .text-container{
+      background: rgb(255, 235, 162);
+      padding: 0rem 1rem 5rem 1rem;
+      border-top-left-radius: 20rem;
+      border-top-right-radius: 20rem;
+      position: relative;
+      bottom: 6rem; 
+    }
+
+    main .section8 .text-container section{
+      padding-top: 6rem;
+    }
+  
+    main .section8 section h3{
+      font-weight: 550;
+      line-height: 1.6rem;
+      text-align: center;
+      margin:  0 2rem 2rem;
+      font-size: 1.25rem;
+    }
+  
+    main .section8 section span{
+      color: rgb(220, 117, 80);
+    }
+
+    main .section8 section .text{
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0;
+      margin: 0 1rem;
+      align-items: center;
+      border: 1px solid gray;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      line-height: 1.6rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+      main .section8 section .item2{
+      background: #000;
+      height: 2px;
+      width: 1rem;
+    }
+
+      main .section8 section .item3{
+      background: #000;
+      height: 2px;
+      width: 1rem;
+      rotate: 90deg;
+      position: relative;
+      right:16px;
+    }
+
+    main .section9{
+      padding: 0rem 1.2rem;
+      text-align: center;
+      line-height: 1.6rem;
+      font-family: 'Telegraf', sans-serif;
+    }
+    main .section9 h2 span{
+      color: rgb(220, 117, 80);
+    }
+
+    main .section9 h2{
+      font-size: 1.8rem;
+      padding-bottom: 2rem;
+      line-height: 2.3rem;
+    }
+
+    main .section9 p{
+      font-family: 'Averta', sans-serif;
+      opacity: 0.7;
+    }
+    main .section9 .btn{
+      margin: 3rem 0 6rem 0;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid;
+      font-weight: 600;
+    }
+
+    main .section-10{
+      background-color: #fff;
+      padding-bottom: 1rem;
+    }
+    main .section10{
+      background-color: rgb(15, 42, 20);
+      position: relative;
+    }
+    
+    main .section10 section:first-child{
+      background: rgb(210, 234, 195);
+      padding: 1rem 0 ;
+    }
+
+    main .section10 section:nth-of-type(1) span h3{
+      font-size: 1.4rem;
+      padding-bottom: 0.8rem;
+      font-family: 'Telegraf', sans-serif;
+      font-weight: normal;
+    }
+
+    main .section10 section:nth-of-type(1) span p{
+      font-size: 1rem;
+      font-family: 'averta', sans-serif;
+      padding-bottom: 1.5rem;
+    }
+    main .section10 section:nth-of-type(1) span{
+      display: block;
+      padding: 1rem 2rem 1rem;
+      line-height: 1.6rem;
+    }
+
+    main .section10 section:nth-of-type(1) span em{
+      display: block;
+    }
+
+    main .section10 section:nth-of-type(2){
+      position: relative;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 1rem;
+      padding-top: 0.2rem;
+      border-radius: 5px;
+      bottom: 2rem;
+    }
+
+    main .section10 section:nth-of-type(2) input::placeholder{
+      opacity: 1;
+      color: #000;
+      font-weight: 500;
+    }
+    main .section10 section:nth-of-type(2) input{
+      padding: 1rem 1.5rem;
+      outline: none;
+      border: none;
+      font-size: 0.96rem;
+      
+    }
+
+    main .section10 section:nth-of-type(2) button{
+      color: white;
+      background-color: black;
+      padding: 1rem;
+      margin: 0.1rem;
+      font-weight: 600;
+      border-radius: 5px;
+      font-size: 1rem;
+      border: none;
+    }
+
+    main .section10 section:nth-of-type(2) button:hover{
+      background: rgb(220, 117, 80);
+    }
+
+    footer{
+      background: white;
+      font-family: 'Telegraf', sans-serif;
+      padding: 2rem;
+    }
+
+    footer a{
+      color: #000;
+    }
+
+    footer a:hover{
+      color: rgb(220, 117, 80);
+      transition: .5s ease-in-out;
+    }
+    footer p{
+      font-family: 'averta', sans-serif;
+    }
+
+    footer .item-1{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer .item-1 section:first-child{
+      width: 100%;
+      line-height: 1.6rem;
+    }
+
+    footer .item-1 section:first-child img{
+      padding-bottom: 1rem;
+    }
+
+    footer .item-1 section:last-child{
+      line-height: 1.6rem;
+      width: 22rem;
+      
+    }
+
+    footer .item-1 section:last-child h3{
+      padding-bottom: 1rem;
+    }
+
+    footer .item-1 section:last-child h4{
+      padding: 3rem 0 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    footer .item-1 section:last-child p{
+      font-size: 1rem;
+
+    }
+
+    footer .item-2{
+      display: flex;
+      gap: 8rem;
+      margin-top: 4.5rem;
+    }
+
+    footer .item-2 div{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    footer .item-2 div a{
+      color: #000;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    footer .item-2 div .active{
+      color: rgb(220, 117, 80);
+    }
+
+    footer .item-2 div a:hover{
+      color: rgb(220, 117, 80);
+      transition: 0.5s ease-in-out;
+    }
+    
+  }
+
+
+    /* Desktop View */
+@media screen and (min-width:1024px){
+
+header nav h3{
+    display: block;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.container header nav p{
+    font-size: 1rem;
+}
+
+.container nav .logo img{
+    width:1.8rem;
+}
+
+ main .section1{
+        padding: 4rem 2rem 0 8.5rem;
+    }
+
+    main .section1 h1 em{
+        display: block;
+    }
+    main .section1 h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+main .section1 .flex-item{
+    display: flex;
+}
+
+main .section1 .image-container1 .video-container{
+    margin-top: -120px;
+    height: 400px;
+    width: 400px;
+}
+
+main .section1 .image-container1 .video-container video{
+    margin-top: -300px;
+    height: 1110px;
+    width: 900px;
+    margin-left: -20rem;
+}
+
+main .section1 .image-container1 .item2{
+        position: relative;
+        right: 22rem;
+        bottom: 9rem;
+    }
+    main .section1 .pine-btn h3{
+        font-size: 1rem;
+        padding:0 6rem 2rem 0;
+        line-height: 1.8rem;
+    }
+    
+    main .section1 .image-container1 div p{
+        font-size: 14px;
+        
+    }
+
+    main .section1 .image-container1 .desktop{
+        width: 500px;
+    }
+
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+
+    main .section1 .image-container1{
+        padding-right: 5.5rem;
+        padding-top: 4rem;
+
+    }
+
+
+    main .section2{
+      padding-bottom: 2rem;
+    }
+    main .section2 iframe{
+      height: 721.11px;
+    width: 1036.64px;
+    margin-left: 6rem;
+     }
+    main .section2 .item1{
+        padding: 8rem 28rem 0 28rem;
+    }
+
+     main .section2 .item1 h1{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-weight: 200;
+    }
+
+
+    main .section2 .item2{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3rem 15rem;
+        gap: 2rem;
+    }
+
+    main .section2 .item2 hr{
+        height: 4rem;
+        margin: 1.5rem 0;
+    }
+
+    main .section2 .item2 section{
+        border: unset;
+    }
+
+    main .section2 hr{
+        display: block;
+     }
+
+    main .section2 .item2 section:first-child{
+        padding-top: 1rem;
+    }
+
+    main .section2 .item2 section h1{
+            padding-top: unset;  
+         }
+
+    main .section2 section img{
+        padding:0 12rem 8rem 12rem;
+
+     }
+
+     main .section3 .image-container2 img{
+     min-width: 100px;
+        width: 15.66%;
+        }
+    main .section3 .image-container2{
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        }
+
+    
+     main .section3 .image-container2{
+    padding: 0 5rem ;
+     }
+    
+     main .section4{
+        padding: 2rem 8rem;
+        background: rgb(255, 255, 255);
+     }
+
+     main .section4 .section4-item1{
+        display: flex; 
+        justify-content: space-between;
+        align-items: start;
+        gap: 5rem;
+        width: 100%;
+        padding-top: 8rem;
+     }
+
+     main .section4 .section4-item1 em{
+        display: block;
+     }
+     main .section4 .section4-item1 p{
+        font-size: 2.4rem;
+        padding-right: 5rem;
+        padding-bottom: none;
+        line-height: 3rem;
+      }
+
+    main .section4 .section4-item1 a{
+        position: relative;
+        
+    }
+
+    main .section4 .section4-item2{
+      padding-top: 1.5rem;
+    }
+    main .section4 .section4-item2 .discovering{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+    } 
+
+     main .section4 .section4-item2 .discovering a{
+      font-size: 2rem;
+     }
+    main .section4 .section4-item2 .discovering img{
+        width: 30%;
+      }
+
+      main .section4 .section4-item2 .item-3{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+
+      main .section4 .section4-item2 .item-3 ul{
+        max-height: 8rem;
+        width: 55%;
+        display:flex;
+        justify-content: space-between;
+        column-gap: 4rem;
+        flex-wrap: wrap;
+      }
+
+
+      main .section4 .section4-item2 .transform ul li{
+        padding: 2rem 0;
+      }
+      main .section4 .section4-item2 .transform ul li a{
+        font-size: 1.6rem;
+        font-weight: 550;
+        
+      }
+
+      main .section4 .section4-item2 .transform ul li span .right-arrow{
+        width: 31px;
+      }
+
+      main .section4 .section4-item2 .transform ul li span{
+        padding-left: 64%;
+      }
+
+      main .section4 .section4-item2 .transform ul li .item2{
+        padding-left: 73%;
+      }
+
+      main .section4 .section4-item2 .transform ul li .item3{
+        padding-left: 72%;
+      }
+
+      main .section4 .section4-item2 .transform button{
+        margin-left: 92%;
+      
+      }
+
+      main .section4 .section4-item2 .transform button a{
+        font-weight: 600;
+
+      }  
+
+      main .section5{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        height: 122dvh;
+        margin-top: 2rem;
+        overflow: auto;
+        overflow-y: hidden;
+        
+        background-color: rgb(245, 250, 255);
+      }
+
+      main .section5::-webkit-scrollbar {
+  display: none;
+      }
+      main .section5 section{
+        width:80%;
+        padding-top: 2.5rem;
+        padding-bottom: 11rem;
+        border-top-right-radius: 1400px;
+        border-bottom-right-radius: 1400px;        
+      }
+
+
+      main .section5 section div p em{
+        display: block;
+      }
+      main .section5 section div{
+        position: relative;
+        top: 3rem;
+        left: 12rem;
+      }
+
+
+      main .section5 section img{
+        width: 700px;
+        height: 400px;
+        padding-left: 2rem;
+        border-radius: 10px;
+      }
+
+      main .section5 section h1{
+        padding: 1rem 0 2rem 0;
+        font-size: 2.5rem;
+      }
+
+      main .section5 section p{
+        padding: 0 0 3rem 0;
+        opacity: 0.7;
+      }
+
+      main .section5 section:nth-of-type(1){
+        position: absolute;
+        background-color: rgb(210, 234, 195);
+        padding-right: 35rem;
+        z-index: 3;
+      }
+
+      main .section5 section:nth-of-type(1) div{
+        left: 8rem;
+      }
+
+      
+       main .section5 section:nth-of-type(2){
+        width: 120dvw;
+        color: white;
+        background-color: black;
+        position: absolute;
+        padding-bottom: 11rem;
+        padding-right: 50rem;
+        left: 53%;
+        z-index: 2;
+      }
+
+      main .section5 section:nth-of-type(2) div{
+        left: 35rem;
+      }
+
+      main .section5 section:nth-of-type(3){
+        width: 132dvw;
+        color: white;
+        background-color: rgb(220, 117, 80);
+        position: absolute;
+        left: 140%;
+        padding-left: 5rem;
+        padding-right: 35rem;
+        z-index: 1;
+      }
+
+      main .section5 section:nth-of-type(3) div{
+        left: 38rem;
+      }
+
+      main .section5 section:nth-of-type(4){
+        display: block;
+        width: 70dvw;
+        height: 125dvh;
+        border-radius: unset;
+        position: absolute;
+        left: 250%;
+        align-items: center;
+        text-align: center;
+        z-index: 0;
+      }
+
+      main .section5 section:nth-of-type(4) div{
+        left: 10rem;
+        top: 15rem;
+      }
+
+      main .section5 section:nth-of-type(4) div p{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+        opacity: 1;
+      }
+
+      main .section5 section:nth-of-type(4) div button{
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+        background-color: transparent;
+        color: rgb(220, 117, 80);
+        border: 2px solid rgb(220, 117, 80);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        opacity: 0.9;
+
+      }
+
+      main .section6{
+        position: relative;
+        top: 8rem;
+      }
+      
+      main .section6 section:nth-of-type(1){
+        background: none;
+      }
+      main .section6 section:nth-of-type(1) h3, main .section6 section:nth-of-type(1) button{
+        display: none;
+      }
+
+      main .section6 section:nth-of-type(2) h2{
+        font-size: 2.8rem;
+        opacity: 1;
+      }
+
+
+      main .section6 section:nth-of-type(2) h2 em{
+        display: inline;
+      }
+      main .section6 section:nth-of-type(2) p{
+        opacity: 1;
+      }
+      main .section6 section:nth-of-type(2) p em{
+        display: block;
+      }
+
+      main .section7{
+        position: relative;
+        top: 16rem;
+      }
+      main .section7 section{
+      justify-content: space-around;
+      margin: unset;
+      flex-wrap: nowrap;
+      row-gap: none;
+      width: 100%;
+      padding: unset;
+       column-gap: unset;
+      
+      }
+
+      main .section7 button{
+        text-align: center;
+        margin: 5rem auto;
+        position: relative;
+        left: 38rem;
+        top: 5rem;       
+       }
+
+      
+       main .section7 section span:nth-of-type(3){
+        margin-top: unset;
+      }
+
+      main .section7 section span{
+        width: 22%;
+        
+
+      }
+
+      main .section7 section span img{
+        width: 300px;
+        border-radius: 50%;
+      }
+
+      main .section7 section span h3{
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+      main .section7 section span h5{
+        font-size: 1rem;
+      }
+
+      main .section7 section span:nth-of-type(1) p{
+        left: 7rem;
+        
+       }
+
+       main .section7 section span:nth-of-type(2) p{
+        
+        left: 5.5rem;
+        
+        
+       }
+
+       main .section7 section span:nth-of-type(3) p{
+        
+        left: 6rem;
+        bottom: 11.5rem;
+        
+       }
+
+    main .section8{
+      margin: 0;
+      padding: 0;
+    }
+
+    main .section8 .text-container{
+      border-top-left-radius: 68rem;
+      border-top-right-radius: 68rem;
+      padding-bottom: 1rem;
+
+    }
+
+    .section8 svg{
+      position: relative;
+      top: 15rem;
+      
+    }
+    main .section8 .text-container section{
+      padding: 10rem 5rem;
+    }
+
+    main .section8 .text-container section h3{
+      font-size: 1.9rem;
+      line-height: 2.8rem;
+      margin: 0 21rem;
+      padding-bottom: 5rem;
+    }
+    main .section9 h2{
+      font-size: 2.8rem;
+      padding-bottom: 1rem;
+      line-height: 2.3rem;
+    }
+
+    main .section8 .text-container section .text{
+      margin: 0 8rem;
+      padding: 3rem 0;
+    }
+
+    main .section8 .text-container section .text p{
+      font-size: 1.5rem;
+    }
+    
+
+    main .section9 p{
+      padding: 0 20rem;
+    }
+    main .section9 .btn{
+      margin-top: 2.5rem;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid;
+      font-weight: 600;
+    }
+
+    main .section10{
+      display: flex;
+      margin: 3rem 5rem;
+      border-radius: 12px;
+    }
+
+    main .section10 section:nth-of-type(1) span em{
+      display: inline;
+    }
+    main .section10 section:nth-of-type(1) span{
+      display: inline-block;
+      padding: 1rem 8rem  1rem 2rem;
+    }
+
+    main .section10 section:nth-of-type(1) span h3{
+      padding-bottom: 5px;
+    }
+    main .section10 section:first-child{
+      padding: 0 7rem 0 1rem;
+      border-radius: 12px;
+      border-top-right-radius: 5rem;
+      border-bottom-right-radius: 5rem;
+    }
+    main .section10 section:last-child{
+      display: inline-flex;
+      flex-direction: unset;
+      align-items: center;
+      top: 2rem;
+      bottom: unset;
+      padding: unset;
+      max-height: 3.5rem;
+      right: 4rem; 
+           
+    }
+    main .section10 section:last-child input{
+      padding: 0 1.5rem 0 1rem;
+      width: 20rem;
+    }
+
+    main .section10 section:last-child button{
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+    }
+    
+    footer{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 8.5rem;
+    }
+    
+    footer .item-1{
+      gap: 3rem;
+    }
+    footer .item-1 section:last-child{
+      width: unset;
+      padding-right: 10rem;
+    }
+
+    footer .item-2{
+      gap: 10rem;
+      margin-top: 0;
+    }
+
+    footer .desktop{
+      display: block;
+      padding-top: 2rem;
+    }
+
+    footer .desktop h5{
+      opacity: 0.8;
+      font-weight: normal;
+    }
+
+    footer .desktop p{
+      font-size: 14px;
+      opacity: 0.5;
+    }
+
+}
